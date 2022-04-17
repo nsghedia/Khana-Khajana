@@ -1,8 +1,10 @@
 <div class="text-center">
   <h2 class="p-3 mb-2 bg-primary text-white text-uppercase">
     {{ title }}
+    <!-- <span appBasicHighlight [defaultColor]="'green'" [highlightColor]="'pink'"> {{ title }}</span> -->
     <!-- <h4 class="text-capitalize text-white" appHeadingStyle>Desi Tadka</h4> -->
-    <h4 class="text-capitalize text-white" appBasicHighlight>Desi Tadka</h4>
+    <h4 class="text-capitalize text-white" appBasicHighlight defaultColor="brown" [highlightColor]="'blue'">Desi
+      Tadka</h4>
   </h2>
 </div>
 <app-header (featureSelected)="onNavigate($event)"></app-header>
