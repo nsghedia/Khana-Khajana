@@ -14,6 +14,8 @@ import { HeadingStyleDirective } from './directive/heading-style.directive';
 import { BasicHighlightDirective } from './directive/basic-highlight.directive';
 import { UnlessDirective } from './directive/unless.directive';
 import { DropdownDirective } from './directive/dropdown.directive';
+import { HostListenerHostBindingComponent } from './HostListenerHostBinding/HostListenerHostBinding.component';
+import { HostListenerBindingDirective } from './directive/HostListenerBinding.directive';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,12 @@ import { DropdownDirective } from './directive/dropdown.directive';
     HeadingStyleDirective,
     BasicHighlightDirective,
     UnlessDirective,
-    DropdownDirective
+    DropdownDirective,
+    HostListenerHostBindingComponent,
+    HostListenerBindingDirective
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

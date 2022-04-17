@@ -8,7 +8,14 @@
       <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
       <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
     </ul>
+
     <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown" appDropdown>
+        <a href="#">Demo</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" (click)="onSelect('app-HostListenerHostBinding')"> HostListener-HostBinding</a></li>
+        </ul>
+      </li>
       <li class="dropdown" appDropdown>
         <a href="#"><span class="glyphicon glyphicon-user"></span></a>
         <ul class="dropdown-menu">
