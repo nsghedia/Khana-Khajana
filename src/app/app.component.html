@@ -16,5 +16,12 @@
       <app-shopping-list *ngIf="loadedFeature == 'shopping-list'"></app-shopping-list>
 
     </div>
+
+    <div class="col-12" *ngIf="IsShowRow">
+      {{Row}}
+    </div>
+    <ng-template [ngIf]="IsShowRow">
+      {{Row}}
+    </ng-template>
   </div>
 </div>
