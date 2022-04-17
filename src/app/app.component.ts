@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   id: any;
   Row: number = 1;
   IsShowRow = true;
-
+  Value = 5;
   ngOnInit(): void {
     this.id = setInterval(() => {
       this.Row++;

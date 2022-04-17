@@ -24,8 +24,13 @@
       {{Row}}
     </ng-template> -->
 
-    <div class="col-12" *appUnless="!IsShowRow">
+    <!-- <div class="col-12" *appUnless="!IsShowRow">
       {{Row}}
+    </div> -->
+
+    <div [ngSwitch]="Value">
+      <p *ngSwitchCase="10">10</p>
+      <p *ngSwitchCase="5">5</p>
     </div>
 
   </div>
