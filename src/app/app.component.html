@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h2 class="p-3 mb-2 bg-primary text-white text-uppercase">
+    {{ title }}
+    <h4 class="text-capitalize text-white">Desi Tadka</h4>
+  </h2>
+</div>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <app-recipes *ngIf="loadedFeature == 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature == 'shopping-list'"></app-shopping-list>
+
+    </div>
+  </div>
+</div>
